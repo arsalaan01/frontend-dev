@@ -184,6 +184,9 @@ header {
 
 .features-section {
   padding: 80px var(--padding-inline-section) 0;
+  background-image: url("./assets/asset\ 34.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features-header {
@@ -192,4 +195,18 @@ header {
 
 .features-heading-text {
   margin-bottom: 20px;
+}
+
+.features-area {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.features-card {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  text-align: center;
+  gap: 40px;
 }
