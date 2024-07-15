@@ -1,0 +1,80 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #bfd0db;
+}
+
+.container .left--pane {
+  width: 45%;
+  height: 100%;
+  position: relative;
+}
+
+.left--pane .limg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1542012252680-7b802edd2570?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  padding: 50px 60px;
+  color: #fff;
+}
+
+.nav h3 {
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 700px;
+  letter-spacing: 4px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Montserrat";
+}
+
+.limg .text {
+  display: flex;
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  background-color: #b44545;
+}
+
+.container .center--pane {
+  width: 45%;
+  height: 100%;
+  background-color: #9bd7ff;
+}
+.container .right--pane {
+  width: 10%;
+  height: 100%;
+  background-color: #d4f65b;
+}
