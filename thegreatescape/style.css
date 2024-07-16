@@ -194,7 +194,7 @@ body {
 .relem .rlinks {
   display: flex;
   gap: 50px;
-  transform: translateY(-150px) rotate(90deg);
+  transform: translateY(-150px) rotate(270deg);
 }
 
 .rlinks a {
