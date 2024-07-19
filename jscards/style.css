@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fd8c75;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 260px;
+  height: 340px;
+  padding: 20px 10px;
+  transition: transform ease-out 0.2s;
+}
+
+.card-header {
+  width: 100%;
+}
+
+.card-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.card-body {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-body h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-body p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.card-body span.Stranger {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e8453d;
+}
+.card-body span.Friend {
+  font-size: 14px;
+  font-weight: 700;
+  color: #27a03d;
+}
+
+.card button {
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.card button.add {
+  background-color: #27a03d;
+}
+.card button.remove {
+  background-color: #e8453d;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
