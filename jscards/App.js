@@ -55,3 +55,29 @@ document
     profileInfo[details.target.id].status = "Friend";
     print();
   });
+
+const promiseOne = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    let error = true;
+    if (!error) {
+      resolve({ username: "Arsalaan", password: "123" });
+    } else {
+      reject("ERROR: Some thing went wrong");
+    }
+  }, 2000);
+});
+
+const username = promiseOne
+  .then((user) => {
+    console.log(user);
+    return user.username;
+  })
+  .then((user) => {
+    console.log(user);
+  })
+  .catch((err) => console.log(err))
+  .finally(() =>
+    console.log("The promise has been either resolved or rejected.")
+  );
+
+console.log(username);
